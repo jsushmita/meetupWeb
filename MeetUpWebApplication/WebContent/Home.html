@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Meetup</title>
+  <style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        background-image: url("bg.jpg");
+	    background-size: cover;
+      }
+
+      .header-div{
+        margin-bottom: 30px;
+        margin-top: 10px;
+        overflow: hidden;
+      }
+
+      #create{
+        font-family: times, serif; font-size:14pt; font-style:bold;
+        margin-left: 70px;
+        margin-right: 11%;
+        font-weight: 600;
+        text-decoration:none;
+	    color:black;
+        
+      }
+
+      .overlay {
+        position:absolute;
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: 50px;
+        top:350px;
+        left:380px;
+        color: white;
+     
+         }
+
+      .header-div li{
+        float: right;
+      }
+
+      .video-div{
+        height: 60%;
+        overflow: hidden;
+        margin:0;
+      }
+
+     
+       #signup, #login{
+        font-family: times, serif; font-size:14pt; font-style:bold;
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        padding: 5px;
+        margin-right: 50px; 
+        
+      }
+
+      .main-div h2{
+       padding: 10px;
+        margin: 30px;
+        font-family: "Comic Sans MS", cursive, sans-serif; font-size:30pt;
+
+      }
+      .content{
+      padding: 10px;
+      margin: 30px;
+      margin-left: 200px;
+    }
+
+    .main-div{
+      float: left;
+    }
+
+    .main-div ul{
+
+      float: left;
+      font-size:20px;
+      list-style-type: none;
+      padding-bottom:10px;
+      border-bottom:1px #ddd solid;
+      margin-bottom: 10px;
+      margin-right: 50px;
+    }
+
+    .contentimg{
+      width: 320px;
+      height: 120px;
+      margin: 50px;
+      
+
+    }
+
+    .main-div p{
+      display: inline-block;
+      text-align: center;
+      width: 350px;
+      color:black;
+      font-size: 15px;
+
+    }
+
+    .mark{
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top:200;
+        left:250;
+    }
+
+	.redbtn{
+	  text-decoration:none;
+	  color:white;
+	  font-weight: 600;
+	  
+	}
+	
+	.links{
+	text-decoration: none;
+	}
+  </style>
+</head>
+<body>
+  <div class="header-div">
+    <span id="create"><a href="Login.jsp" id="create">Create a meetup!</a></span>
+    <span><img  id="logo" src="meetup-logo.jpg" width="200" height="50"></span>
+    <span>
+      <ul type="none">
+        <li><div id="login"><a href="Login.jsp" class="redbtn">Login</a></div></li>
+        <li><div id="signup"><a href="SignUp.jsp" class="redbtn">SignUp!</a></div></li>
+      </ul>
+
+    </span>
+  </div> 
+
+  <div class="video-div"> 
+    <video src="https://secure.meetupstatic.com/s/img/457419671895069178/guest_home/video.mp4" width="1400" height="500" autoplay loop>
+    </video>
+    <span class="overlay">Do more of what you love!</span>
+  </div> 
+
+  <div class="main-div">
+    <h2 style="text-align:center">EXPLORE</h2>
+  
+    <div class="content">
+      <ul style:"margin-left=30px;">
+        <a href="./social" class="links"><h2 style="color:#0093d8; font-weight:bold;" >Social</h2></a>
+        <li><img src="images.jpg" class="contentimg">
+          <img src="mark.png" class="mark"></li>
+        <br>
+        <li><p class="description">Find out what's happening in Social Meetup groups around the world and start meeting up with the ones near you.</p></li>
+      </ul>
+      <ul>
+         <a href="./tech" class="links"><h2 style="color:#0093d8;font-weight:bold;">Tech</h2></a>
+        <li><img src="tech.jpg" class="contentimg">
+                  <img src="mark.png" class="mark"></li><br>
+        <li><p class="description">Find out what's happening in Tech Meetup groups around the world and start meeting up with the ones near you.</p></li>
+      </ul>
+      <ul>
+         <a href="./craft" class="links"><h2 style="color:#0093d8;font-weight:bold;">Hobbies and craft</h2></a>
+        <li><img src="craft.jpg" class="contentimg">
+                  <img src="mark.png" class="mark"></li><br>
+        <li><p class="description">Find out what's happening in Hobbies and craft Meetup groups around the world and start meeting up with the ones near you.</p></li>
+      </ul>
+      <ul>
+         <a href="./beauty" class="links"><h2 style="color:#0093d8;font-weight:bold;">Beauty and Makeup</h2></a>
+        <li><img src="makeup.jpg" class="contentimg">
+                  <img src="mark.png" class="mark"></li><br>
+        <li><p class="description" >Find out what's happening in Beauty and makeup Meetup groups around the world and start meeting up with the ones near you.</p></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+  <div class="footer-div">
+
+  </div>
+</body>
+</html>
